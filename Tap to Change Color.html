@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>かんたんゲーム</title>
+</head>
+
+<body style="text-align:center;">
+
+    <h1>Tap to Change Color</h1>
+
+  <button onclick="changeColor()" style="font-size:30px;">
+    タップ！
+  </button>
+
+  <script>
+    function changeColor() {
+      const colors = ["red", "blue", "green", "yellow", "purple"];
+      const random = Math.floor(Math.random() * colors.length);
+      document.body.style.backgroundColor = colors[random];
+    }
+  </script>
+
+</body>
+</html>
